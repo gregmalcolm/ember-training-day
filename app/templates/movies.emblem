@@ -8,6 +8,9 @@
         each model as |movie|
           tr
             td 
-              = movie.name
+              link-to "movies.show" movie
+                ' #{movie.name}
+              ' 
+              ' - #{movie.year}
   .col-md-8
     = outlet

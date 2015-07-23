@@ -5,8 +5,8 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-  @route "index", { path: "/" }
-  @route "movies", { path: "/movies" }
-  @route "cards", { path: "/cards" }
+  @route "movies", ->
+    @route "show", { path: "/:movie_id" }
+  @route "cards"
   
 `export default Router`

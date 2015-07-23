@@ -1,0 +1,9 @@
+h1 #{name}
+
+div
+  b
+    = year
+div
+  = description
+
+= outlet
