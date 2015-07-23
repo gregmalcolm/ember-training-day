@@ -6,4 +6,15 @@ div
 div
   = description
 
+div
+  h2 Cast
+  table.table.table-striped
+    tbody
+      each model.appearances as |appearance|
+        tr 
+          td
+            = appearance.character.name
+          td
+            = appearance.actor.name
+
 = outlet

@@ -1,6 +1,7 @@
 `import Ember from 'ember'`
 
 MoviesShowRoute = Ember.Route.extend
+  # afterModel: (resolvedModel, transition) ->
   replace: "me"
 
   # beforeModel is called before the model hook. It's approprate to override if you need to:
